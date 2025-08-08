@@ -1,0 +1,99 @@
+.main-card-project {
+  padding: 2rem;
+  font-family: "Segoe UI", sans-serif;
+}
+
+.featured-title {
+  font-size: 1.8rem;
+  margin-left: 4rem;
+  margin-bottom: 1.5rem;
+  color: #333;
+}
+
+.card-project {
+  background: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+  padding: 1.5rem;
+  max-width: 800px;
+  margin: 0 auto;
+  transition: transform 0.3s ease;
+}
+
+.card-project:hover {
+  transform: translateY(-5px);
+}
+
+.top-image {
+  display: flex;
+  gap: 2rem;
+  overflow-x: auto;
+  border-radius: 12px;
+}
+
+.top-image img {
+  width: 100%;
+  max-width: 380px;
+  border-radius: 12px;
+  object-fit: cover;
+}
+
+.project-title {
+  font-size: 1.5rem;
+  margin-top: 1rem;
+  color: #222;
+}
+
+.project-desc {
+  margin-top: 0.5rem;
+  color: #555;
+  font-size: 1rem;
+}
+
+.technology {
+  margin-top: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.technology span {
+  background: #eef1f8;
+  color: #444;
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-size: 0.85rem;
+}
+
+.btn-group-project {
+  margin-top: 1.5rem;
+  display: flex;
+  gap: 1rem;
+}
+
+.btn {
+  padding: 10px 20px;
+  border-radius: 25px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.live-demo {
+  background-color: #6d28d9;
+  color: white;
+}
+
+.github {
+  border: 2px solid #6d28d9;
+  color: #6d28d9;
+}
+
+.live-demo:hover {
+  background-color: #5b21b6;
+}
+
+.github:hover {
+  background-color: #6d28d9;
+  color: white;
+}

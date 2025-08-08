@@ -1,0 +1,79 @@
+.container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  margin-top: 40px;
+}
+.about-top{
+  align-items: center;
+}
+.about-journey{
+  padding: 10px;
+width: 450px;
+height: 620px;
+border-radius: 10px;
+background-color: rgb(214, 206, 206,0.171);
+}
+.quick-fact{
+   padding: 10px;
+width: 450px;
+height: 500px;
+border-radius: 10px;
+background-color: rgba(214, 206, 206, 0.171);
+}
+.top-section{
+  font-size:large;
+  font-weight: bold;
+  margin-left: 20px;
+  margin-top: 10px;
+}
+
+hr{
+  border: none;
+  height: 3px;
+  background-color: #6a1b9a; 
+  margin: 10px 0;
+}
+#story{
+  font-size: 18px;
+  font-family: 'Times New Roman', Times, serif;
+  color: rgba(95, 51, 150, 0.545);
+}
+.fact {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* 2 columns */
+  gap: 20px; /* space between boxes */
+  max-width: 500px; /* optional, for layout control */
+  margin: auto; /* center the grid */
+  padding: 20px;
+}
+
+.fact-fact {
+  background-color: #e0e0e0;
+  padding: 40px;
+  font-size: 25px;
+  font-weight: bolder;
+  color: #2d06dc6d;
+  text-align: center;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+   transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.fact-fact:hover {
+  transform: translateY(-8px) scale(1.05);
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.2);
+}
+.fact-fact-name{
+  font-size: 20px;
+  font-weight: 400;
+  color: rgba(80, 75, 75, 0.655);
+}
+#technical-heading{
+  text-align: center;
+  margin-top: 50px;
+}
+.ilove{
+   text-align: center;
+  margin-top: 50px;
+}
