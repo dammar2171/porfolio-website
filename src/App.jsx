@@ -13,7 +13,7 @@ import ServicePage from "./components/ServicePage";
 function App() {
   const [active, setActive] = useState("home");
   const [darkMode, setDarkMode] = useState(false);
-  const [isSidebarOpen, setIsSidebarOpen] = useState(false); // sidebar toggle
+  const [isSidebarOpen, setIsSidebarOpen] = useState(false);
 
   return (
     <>
@@ -26,6 +26,14 @@ function App() {
           ☰
         </button>
 
+        {/* Overlay for mobile */}
+        {isSidebarOpen && window.innerWidth <= 768 && (
+          <div
+            className="overlay"
+            onClick={() => setIsSidebarOpen(false)}
+          ></div>
+        )}
+
         <div className="d-flex">
           <Sidebar
             active={active}
@@ -34,18 +42,13 @@ function App() {
             setDarkMode={setDarkMode}
             isSidebarOpen={isSidebarOpen}
             setIsSidebarOpen={setIsSidebarOpen}
+            className={`sidebar ${isSidebarOpen ? "open" : ""}`}
           />
 
           <div
-            className="p-5 custom-main-content"
-            style={{
-              marginLeft:
-                window.innerWidth > 768
-                  ? "260px" // Always keep margin for desktop
-                  : isSidebarOpen
-                  ? "260px" // For mobile, only add margin when sidebar is open
-                  : "0",
-            }}
+            className={`p-5 custom-main-content ${
+              isSidebarOpen && window.innerWidth <= 768 ? "hide-content" : ""
+            }`}
           >
             {active === "home" ? (
               <HomeGreet setActive={setActive} />
