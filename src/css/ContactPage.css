@@ -135,3 +135,59 @@ form button {
 form button:hover {
   background: linear-gradient(135deg, #6e42a1, #5a63d3);
 }
+
+
+/* ------------------ MOBILE RESPONSIVE ONLY ------------------ */
+@media (max-width: 768px) {
+  .contact-container {
+    padding: 20px;
+  }
+
+  .contact-content {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .left-info,
+  .right-form {
+    width: 100%;
+    min-width: unset;
+  }
+
+  .form-row {
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .right-form {
+    padding: 16px;
+  }
+
+  form input,
+  form select,
+  form textarea {
+    font-size: 0.9rem;
+    padding: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .contact-heading h1 {
+    font-size: 1.5rem;
+  }
+
+  .contact-button {
+    padding: 6px 12px;
+    font-size: 0.85rem;
+  }
+
+  .right-form p,
+  .left-info p {
+    font-size: 0.9rem;
+  }
+
+  form button {
+    font-size: 0.9rem;
+    padding: 10px;
+  }
+}

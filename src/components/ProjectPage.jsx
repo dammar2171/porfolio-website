@@ -5,11 +5,11 @@ import "../css/ProjectPage.css";
 const ProjectPage = ({ setActive }) => {
   return (
     <>
-      <div className="about-top">
+      <div className="project-top">
         <FaFolderOpen />
         My Work
       </div>
-      <div className="about-heading">Featured Projects</div>
+      <div className="project-heading">Featured Projects</div>
       <p id="my-intro-about">
         A selection of projects showcasing my skill in web development , design
         and my problem solving skill.

@@ -1,6 +1,8 @@
 .main-div {
   position: relative;
-  overflow: hidden;
+  overflow: visible;
+   min-height: 100vh; /* ensures it fills the screen */
+  padding-bottom: 50px;
 }
 
 .shape {
@@ -40,10 +42,10 @@
 .home-greet{
  background-color: rgba(171, 153, 225, 0.2);
   border-radius: 15px;
-  padding: 10px 20px 10px 20px;
+  padding: 0 20px 10px 20px;
   margin-left: 350px;
   align-items: center;
-  margin-top: 80px;
+  margin-top: 50px;
   color: rgb(73, 5, 220);
   display: flex;
   gap: 10px; 
@@ -140,4 +142,90 @@ font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   text-align: center;
   margin-top: 30px;
   color: rgba(39, 6, 158, 0.349);
+}
+
+/* === Base Desktop Styles (Your Existing Styles) === */
+/* Keep your existing styles here (no change to them) */
+
+
+/* === Mobile & Tablet Adjustments === */
+@media (max-width: 768px) {
+  .home-greet {
+    margin-left: 30px;
+    margin-top: 20px;
+    font-size: 16px;
+    padding: 5px 15px;
+    justify-content: center;
+  }
+
+  .home-intro {
+    font-size: 28px;
+    margin: 0 0 0 0;
+    margin-left: 10px;
+    text-align: center;
+  }
+
+  #name {
+    font-size: 30px;
+    display: inline-block;
+  }
+
+  #web-developer {
+    font-size: 20px;
+    margin: 0 auto;
+    text-align: center;
+    display: block;
+    width: auto;
+    border-right: none; /* Remove cursor effect on small screens for clarity */
+    animation: none; /* Disable typing effect if it looks cramped */
+  }
+
+  #my-intro {
+    margin: 0 15px 15px 15px;
+    font-size: 16px;
+    text-align: justify;
+  }
+
+  .home-btn-group {
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 25px;
+  }
+
+  #view-work-btn,
+  #download-resume-btn,
+  #lets-talk-btn {
+    width: 100%;
+    max-width: 250px;
+    font-size: 10px;
+  }
+
+  #home-quote {
+    font-size: 14px;
+    margin: 10px 2px 0;
+    text-align: center;
+  }
+
+  /* Shapes - hide or resize for mobile to prevent overflow */
+  .shape {
+    opacity: 0.1;
+  }
+  .circle {
+    width: 80px;
+    height: 80px;
+    top: 5%;
+    left: 5%;
+  }
+  .square {
+    width: 60px;
+    height: 60px;
+    top: 20%;
+    left: 80%;
+  }
+  .rectangle {
+    width: 120px;
+    height: 50px;
+    bottom: 5%;
+    right: 5%;
+  }
 }

@@ -2,6 +2,18 @@
   padding: 2rem;
   font-family: "Segoe UI", sans-serif;
 }
+.experince-heading{
+  font-size: 32px;
+    margin: 10px 0 10px 0;
+    text-align: center;
+}
+
+#my-intro-experience{
+  margin: 10px 15px;
+    font-size: 16px;
+    text-align: justify;
+}
+
 .card-experience {
   background: #ffffff;
   border-radius: 16px;
@@ -125,5 +137,100 @@
   color: #0077cc;
 }
 
+/* Existing styles unchanged above */
+
+/* === Mobile & Tablet === */
+@media (max-width: 768px) {
+  .main-card-experience {
+    padding: 1rem;
+    margin: 0 10px;
+    min-width: 22rem;
+  }
+
+      .experience-heading {
+        font-size: 32px;
+        margin: 10px 0 10px 0;
+        text-align: center;
+    }
+        #my-intro-experience {
+        margin: 5px 15px;
+        font-size: 16px;
+        text-align: -webkit-center;
+    }
+
+  .card-experience {
+    max-width: 100%;
+    padding: 1rem;
+    margin-bottom: 20px;
+  }
+
+  .experience-title {
+    font-size: 1.2rem;
+    text-align: center;
+  }
+
+  .experience-key {
+    font-size: 0.9rem;
+    text-align: center;
+  }
+
+  .experience-desc {
+    font-size: 0.9rem;
+    text-align: justify;
+    margin-top: 0.25rem;
+  }
+
+  .technology-experience {
+    justify-content: center;
+    gap: 0.4rem;
+  }
+
+  .experience-span {
+    font-size: 0.7rem;
+    padding: 5px 10px;
+  }
+
+  .experience-ul li {
+    font-size: 0.85rem;
+    text-align: left;
+  }
+
+  /* Qualification Cards */
+  .heading-education {
+    font-size: 24px;
+    margin-bottom: 0;
+    text-align: center;
+  }
+
+  .cardContainer-qualification {
+    flex-direction: column;
+    gap: 15px;
+    margin-left: 0;
+    padding: 15px 10px;
+  }
+
+  .card-qualification {
+    width: 100%;
+    max-width: 320px;
+    margin: 0 auto;
+    padding: 15px 20px;
+  }
+
+  .card-qualification h3 {
+    font-size: 1.1rem;
+  }
+
+  .school-name,
+  .subject,
+  .date-gpa {
+    font-size: 0.9rem;
+  }
+
+  .date-gpa {
+    flex-direction: column;
+    gap: 5px;
+    align-items: center;
+  }
+}
 
 

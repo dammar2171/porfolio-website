@@ -8,8 +8,8 @@ const ExperiencePage = () => {
         <IoBagAdd />
         Experience
       </div>
-      <div className="about-heading experince-heading">My Journey</div>
-      <p id="my-intro-about">
+      <div className="experince-heading">My Journey</div>
+      <p id="my-intro-experience">
         A timeline of my professional experience,education and my growth as
         developer.
       </p>

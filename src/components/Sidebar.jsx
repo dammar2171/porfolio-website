@@ -1,5 +1,5 @@
 import { FaLinkedin, FaGithub, FaInstagram, FaFacebook } from "react-icons/fa";
-import { IoMdHome } from "react-icons/io";
+import { AiFillHome } from "react-icons/ai";
 import { MdOutlineDarkMode } from "react-icons/md";
 import { FaUserAlt, FaFolderOpen } from "react-icons/fa";
 import { IoBagAdd, IoSettings } from "react-icons/io5";
@@ -7,13 +7,21 @@ import { MdEmail } from "react-icons/md";
 import "../css/Sidebar.css";
 import profile from "../assets/profile-img.jpg";
 
-const Sidebar = ({ active, setActive, darkMode, setDarkMode }) => {
+const Sidebar = ({
+  active,
+  setActive,
+  darkMode,
+  setDarkMode,
+  isSidebarOpen,
+  setIsSidebarOpen,
+}) => {
   const handleActive = (buttonName) => {
     setActive(buttonName);
+    setIsSidebarOpen(false); // close sidebar on mobile after click
   };
 
   const buttons = [
-    { name: "home", icon: <IoMdHome />, label: "Home" },
+    { name: "home", icon: <AiFillHome />, label: "Home" },
     { name: "about", icon: <FaUserAlt />, label: "About" },
     { name: "project", icon: <FaFolderOpen />, label: "Project" },
     { name: "experience", icon: <IoBagAdd />, label: "Experience" },
@@ -22,7 +30,7 @@ const Sidebar = ({ active, setActive, darkMode, setDarkMode }) => {
   ];
 
   return (
-    <div className="sidebar">
+    <div className={`sidebar ${isSidebarOpen ? "open" : ""}`}>
       <div className="profile">
         <img src={profile} alt="Profile" className="profile-img" />
         <h2>Dammar_Bhatt</h2>
@@ -50,16 +58,32 @@ const Sidebar = ({ active, setActive, darkMode, setDarkMode }) => {
       </nav>
 
       <div className="social-icons">
-        <a href="https://www.linkedin.com/in/dammar-bhatt-0a41aa302/">
+        <a
+          href="https://www.linkedin.com/in/dammar-bhatt-0a41aa302/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           <FaLinkedin />
         </a>
-        <a href="https://github.com/dammar2171">
+        <a
+          href="https://github.com/dammar2171"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           <FaGithub />
         </a>
-        <a href="https://www.instagram.com/dammar.bhatt/">
+        <a
+          href="https://www.instagram.com/dammar.bhatt/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           <FaInstagram />
         </a>
-        <a href="https://www.facebook.com/dammar.bhatt.146">
+        <a
+          href="https://www.facebook.com/dammar.bhatt.146"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           <FaFacebook />
         </a>
       </div>
