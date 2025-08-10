@@ -157,6 +157,9 @@ font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     padding: 5px 15px;
     justify-content: center;
   }
+  .main-div {
+    padding-bottom: 1px;
+}
 
   .home-intro {
     font-size: 28px;

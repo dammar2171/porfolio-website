@@ -143,5 +143,8 @@
     cursor: pointer;
     z-index: 1000;
   }
+  .sidebar_btn{
+    height: 50px;
+  }
   
 }
